@@ -1,1 +1,10 @@
-{}
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarBackgroundColor":"#bbdef8",
+    "navigationBarTitleText":"Demo",
+    "navigationBarTextStyle":"white"
+  }
+}
