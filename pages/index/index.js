@@ -2,7 +2,9 @@ var flag = true;
 var color = 'window';
 Page({
     data:{
-        color : 'window'
+        color : 'window',
+        array : ["个性推荐", "歌单", "主播电台", "排行榜"],
+        view: 'MINA'
         },
     click:function () {
         console.log("点击了文字");

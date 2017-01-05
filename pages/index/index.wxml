@@ -1,3 +1,14 @@
+<!--列表for循环-->
+<view>
+    <text class="navLi" wx:for="{{array}}">{{item}}</text>
+</view>
+
+<!--事件-->
 <view>
     <text catchtap="click" class="{{color}}">Hello World</text>
 </view>
+
+<!--if判断-->
+<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
+<view wx:elif="{{view == 'APP'}}"> APP </view>
+<view wx:else="{{view == 'MINA'}}"> MINA </view>

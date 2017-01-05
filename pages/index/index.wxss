@@ -5,3 +5,8 @@
 .window-new{
   color: #D23933;
 }
+.navLi{
+  width: 25%;
+  font-size: 14px;
+  color:#333333;
+}
