@@ -12,3 +12,14 @@
 <view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
 <view wx:elif="{{view == 'APP'}}"> APP </view>
 <view wx:else="{{view == 'MINA'}}"> MINA </view>
+
+<!--模板-->
+<template name="staffName">
+  <view>
+    FirstName: {{firstName}}, LastName: {{lastName}}
+  </view>
+</template>
+
+<template is="staffName" data="{{...staffA}}"></template>
+<template is="staffName" data="{{...staffB}}"></template>
+<template is="staffName" data="{{...staffC}}"></template>

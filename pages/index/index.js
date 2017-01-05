@@ -4,7 +4,10 @@ Page({
     data:{
         color : 'window',
         array : ["个性推荐", "歌单", "主播电台", "排行榜"],
-        view: 'MINA'
+        view: 'MINA',
+        staffA: {firstName: 'Hulk', lastName: 'Hu'},
+        staffB: {firstName: 'Shang', lastName: 'You'},
+        staffC: {firstName: 'Gideon', lastName: 'Lin'}
         },
     click:function () {
         console.log("点击了文字");
