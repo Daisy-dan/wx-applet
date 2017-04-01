@@ -22,7 +22,7 @@ Page({
             console.log(color);
         }
         this.setData({
-            color
+            
         });
     },
     onLoad:function(option){

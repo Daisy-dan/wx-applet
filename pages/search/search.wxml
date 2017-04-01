@@ -1,0 +1,26 @@
+<!--pages/search/search.wxml-->
+<view class="tit">
+    <input type="text" placeholder="请输入"/>
+    <button>查询</button>
+</view>
+<view class="res">
+    <!--<image src="../../images/smile.png"></image>
+    <image src="../../images/cry.png"></image>-->
+    <scroll-view scroll-y="true" style="height: 300px;text-align:left;padding-left:30px;line-height:30px;">
+        <view>name:</view>
+        <view>datetime:</view>
+        <view>date:</view>
+        <view>all:</view>
+        <view>color:</view>
+        <view>health:</view>
+        <view>love:</view>
+        <view>money:</view>
+        <view>number:</view>
+        <view>QFriend:</view>
+        <view>summary:</view>
+        <view>work:</view>
+        <view>error_code:</view>
+    </scroll-view>
+</view>
+
+

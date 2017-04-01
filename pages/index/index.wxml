@@ -1,25 +1,6 @@
-<!--列表for循环-->
-<view>
-    <text class="navLi" wx:for="{{array}}">{{item}}</text>
+<view class="welcom">
+    <image src="../../images/welcom.png" class="pic"></image>
 </view>
-
-<!--事件-->
-<view>
-    <text catchtap="click" class="{{color}}">Hello World</text>
+<view class="txt">
+    <text class="info">WELCOME</text>
 </view>
-
-<!--if判断-->
-<view wx:if="{{view == 'WEBVIEW'}}"> WEBVIEW </view>
-<view wx:elif="{{view == 'APP'}}"> APP </view>
-<view wx:else="{{view == 'MINA'}}"> MINA </view>
-
-<!--模板-->
-<template name="staffName">
-  <view>
-    FirstName: {{firstName}}, LastName: {{lastName}}
-  </view>
-</template>
-
-<template is="staffName" data="{{...staffA}}"></template>
-<template is="staffName" data="{{...staffB}}"></template>
-<template is="staffName" data="{{...staffC}}"></template>

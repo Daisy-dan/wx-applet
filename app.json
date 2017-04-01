@@ -1,23 +1,46 @@
 {
   "pages":[
-    "pages/index/index"
+    "pages/search/search",
+    "pages/index/index",
+    "pages/logs/logs",
+    
+    "pages/mine/mine"
   ],
   "window":{
-    "navigationBarBackgroundColor":"#bbdef8",
-    "navigationBarTitleText":"Demo",
-    "navigationBarTextStyle":"white"
+    "navigationBarBackgroundColor":"#000000",
+    "navigationBarTitleText":"星座运势",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle":"light"
   },
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath":"images/1.png",
+      "selectedIconPath": "images/01.png"
     }, {
       "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }],
-    "color":"#ffffff",
-    "backgroundColor":"#bbdef8",
-    "borderStyle":"white"
+      "text": "日志",
+      "iconPath":"images/2.png",
+      "selectedIconPath": "images/02.png"
+    },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查询",
+        "iconPath":"images/5.png",
+        "selectedIconPath": "images/05.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath":"images/4.png",
+        "selectedIconPath": "images/04.png"
+      }],
+    "color":"#000000",
+    "backgroundColor":"#ffffff",
+    "borderStyle":"white",
+    "position": "bottom"
   },
   "networkTimeout": {
     "request": 10000,
