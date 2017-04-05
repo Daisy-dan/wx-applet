@@ -1,43 +1,49 @@
-var flag = true;
-var color = 'window';
 Page({
-    data:{
-        color : 'window',
-        array : ["个性推荐", "歌单", "主播电台", "排行榜"],
-        view: 'MINA',
-        staffA: {firstName: 'Hulk', lastName: 'Hu'},
-        staffB: {firstName: 'Shang', lastName: 'You'},
-        staffC: {firstName: 'Gideon', lastName: 'Lin'}
-        },
-    click:function () {
-        console.log("点击了文字");
+  data: {
+    animationData: {}
+  },
+  onShow: function(){
+    var animation = wx.createAnimation({
+      duration: 1000,
+        timingFunction: 'ease',
+    })
 
-        if(flag){
-            color= 'window';
-            flag = false;
-            console.log(color);
-        }else{
-            color= 'window-red';
-            flag = true;
-            console.log(color);
-        }
-        this.setData({
-            
-        });
-    },
-    onLoad:function(option){
+    this.animation = animation
 
-    },
-    onReady:function () {
+    animation.scale(1,1).rotate(45).step()
 
-    },
-    onShow:function () {
+    this.setData({
+      animationData:animation.export()
+    })
 
-    },
-    onHide:function () {
-
-    },
-    onUnload:function () {
-
-    }
+    setTimeout(function() {
+      animation.translate(30).step()
+      this.setData({
+        animationData:animation.export()
+      })
+    }.bind(this), 1000)
+  },
+  rotateAndScale: function () {
+    // 旋转同时放大
+    this.animation.rotate(45).scale(2, 2).step()
+    this.setData({
+      animationData: this.animation.export()
+    })
+  },
+  rotateThenScale: function () {
+    // 先旋转后放大
+    this.animation.rotate(45).step()
+    this.animation.scale(2, 2).step()
+    this.setData({
+      animationData: this.animation.export()
+    })
+  },
+  rotateAndScaleThenTranslate: function () {
+    // 先旋转同时放大，然后平移
+    this.animation.rotate(45).scale(2, 2).step()
+    this.animation.translate(100, 100).step({ duration: 1000 })
+    this.setData({
+      animationData: this.animation.export()
+    })
+  }
 })

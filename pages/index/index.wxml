@@ -1,4 +1,4 @@
-<view class="welcom">
+<view class="welcom" animation="{{animationData}}">
     <image src="../../images/welcom.png" class="pic"></image>
 </view>
 <view class="txt">

@@ -1,19 +1,25 @@
 // pages/search/search.js
 Page({
-  data:{},
-  onLoad:function(options){
-    // 页面初始化 options为页面跳转所带来的参数
+  data:{
+    // text:"这是一个页面"
+    picker1Value:0,
+    picker1Range:['北京','上海','广州','深圳'],
+    timeValue:new Date().toLocaleTimeString(),
+    dateValue:new Date().toLocaleDateString()
   },
-  onReady:function(){
-    // 页面渲染完成
+  normalPickerBindchange:function(e){
+    this.setData({
+      picker1Value:e.detail.value
+    })
   },
-  onShow:function(){
-    // 页面显示
+  timePickerBindchange:function(e){
+    this.setData({
+      timeValue:e.detail.value
+    })
   },
-  onHide:function(){
-    // 页面隐藏
-  },
-  onUnload:function(){
-    // 页面关闭
+  datePickerBindchange:function(e){
+    this.setData({
+      dateValue:e.detail.value
+    })
   }
 })

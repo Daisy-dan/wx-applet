@@ -1,2 +1,13 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="p20">
+    <view class="con">
+        <image src="{{userInfoAvatar}}" class="self"></image>
+        <view class="info-person">
+            <view>{{nickName}}*{{sex}}</view>
+            <view>{{city}}</view>
+            <view>{{province}}</view>
+            <view>{{openId}}</view>
+        </view>
+    </view>
+    
+</view>

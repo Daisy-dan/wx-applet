@@ -1,16 +1,18 @@
 {
   "pages":[
+    
+    
     "pages/search/search",
     "pages/index/index",
-    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/logs/logs"
     
-    "pages/mine/mine"
   ],
   "window":{
     "navigationBarBackgroundColor":"#000000",
-    "navigationBarTitleText":"星座运势",
+    "navigationBarTitleText":"WX小程序",
     "navigationBarTextStyle":"white",
-    "backgroundColor": "#000000",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle":"light"
   },
   "tabBar": {
