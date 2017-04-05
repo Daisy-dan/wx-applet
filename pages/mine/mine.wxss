@@ -1,22 +1,67 @@
 /* pages/mine/mine.wxss */
 .p20{
-     margin: 20px 20px 10px;
-     text-align: center;
-     border-bottom: 1px dashed #e4e4e4;
+     padding: 0px 20px;
+     background: #ffffff;
+}
+.white{
+    background: #ffffff;
+}
+.text-center{
+    text-align: center;
 }
 .con{
     display: inline-block;
-   
+    text-align: center;
+    padding: 20px 0 10px;
 }
 .p20 .self{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
     border: 1px solid #e4e4e4;
 }
-.info-person{
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 20px;
-    height: 100px;
+.info-person{ 
     line-height: 35px;
+    font-size: 16px;
+}
+.code{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: #e4e4e4;
+}
+.bg{
+    width: 100%;
+    height:13px;
+    background: #efefef;
+    border: 1px solid #e4e4e4;
+}
+.borderB{
+    border-bottom: 2px solid #e4e4e4;
+    line-height: 50px;
+}
+.padL-20{
+    padding: 0 20px;
+    position: relative;
+}
+.ico{
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.title{
+    font-size: 16px;
+}
+.text-right{
+    position: absolute;
+    right: 20px;
+    top: 17px;
+}
+.trigger-r{
+    width: 20px;
+    height: 20px;
+    
 }

@@ -1,6 +1,13 @@
-<view class="welcom" animation="{{animationData}}">
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="welcom" animation="{{animationData}}">
     <image src="../../images/welcom.png" class="pic"></image>
 </view>
 <view class="txt">
     <text class="info">WELCOME</text>
+</view>
 </view>

@@ -1,13 +1,30 @@
 <!--pages/mine/mine.wxml-->
 <view class="p20">
-    <view class="con">
-        <image src="{{userInfoAvatar}}" class="self"></image>
-        <view class="info-person">
-            <view>{{nickName}}*{{sex}}</view>
-            <view>{{city}}</view>
-            <view>{{province}}</view>
-            <view>{{openId}}</view>
+    <view class="text-center">
+        <view class="con">
+            <image src="{{userInfoAvatar}}" class="self"></image>
+            <view class="info-person">
+                <view>{{nickName}}</view>
+            </view>
+            <view class="code"></view>
         </view>
     </view>
-    
+</view>
+<view class="bg"></view>
+<view class="white">
+    <navigator class="borderB padL-20" url="../personInfo/personInfo">
+        <image src="../../images/card.png" class="ico"></image>
+        <text class="title">我的账户</text>
+        <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
+    </navigator>
+    <navigator class="borderB padL-20">
+        <image src="../../images/shouce.png" class="ico"></image>
+        <text class="title">我的体验手册</text>
+        <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
+    </navigator>
+    <navigator class="borderB padL-20">
+        <image src="../../images/collection.png" class="ico"></image>
+        <text class="title">我的收藏</text>
+        <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
+    </navigator>
 </view>

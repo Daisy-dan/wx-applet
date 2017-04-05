@@ -1,3 +1,4 @@
+// pages/mine/mine.js
 Page({
   data: {
    nickName:'',
@@ -45,15 +46,9 @@ Page({
       }
     }),
     wx.setNavigationBarTitle({
-      title: '我'
-    }),
-    wx.showToast({
-      title: '成功',
-      icon: 'success',
-      duration: 2000
+      title: '个人中心'
     })
     
-    
-    
+       
   }
 })

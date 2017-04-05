@@ -1,19 +1,14 @@
+//logs.js
+var util = require('../../utils/util.js')
 Page({
-    data:{
-        
-    },
-    onLoad:function(){
-       wx.showActionSheet({
-        itemList: ['A', 'B', 'C'],
-        success: function(res) {
-            console.log(res.tapIndex)
-        },
-        fail: function(res) {
-            console.log(res.errMsg)
-        }
-      }),
-    wx.setNavigationBarTitle({
-      title: '日志'
+  data: {
+    logs: []
+  },
+  onLoad: function () {
+    this.setData({
+      logs: (wx.getStorageSync('logs') || []).map(function (log) {
+        return util.formatTime(new Date(log))
+      })
     })
-    }
-    })
+  }
+})

@@ -1,7 +1,18 @@
+//index.js
+//获取应用实例
+var app = getApp()
 Page({
   data: {
-    animationData: {}
+    animationData: {},
+    userInfo: {}
   },
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
+  
   onShow: function(){
     var animation = wx.createAnimation({
       duration: 1000,
@@ -44,6 +55,23 @@ Page({
     this.animation.translate(100, 100).step({ duration: 1000 })
     this.setData({
       animationData: this.animation.export()
+    })
+  },
+  onLoad: function () {
+    console.log('onLoad')
+    var that = this
+    //调用应用实例的方法获取全局数据
+    app.getUserInfo(function(userInfo){
+      //更新数据
+      that.setData({
+        userInfo:userInfo
+      })
+    }),
+    wx.setNavigationBarTitle({
+      title: '好友',
+      success: function(res) {
+        // success
+      }
     })
   }
 })

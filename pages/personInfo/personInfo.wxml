@@ -1,0 +1,51 @@
+<!--pages/personInfo/personInfo.wxml-->
+<view class="p20">
+    <form>
+        <view class="borderB H90">
+            <view class="form-title lineH90">头像</view>
+            <image src="{{tempFilePaths}}" bindtap="chooseimage" mode="aspecFill" class="personImg"></image>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title">姓名</view>
+            <input type="text"/>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title">联系电话</view>
+            <input type="text"/>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title">商号名称</view>
+            <input type="text"/>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title">工作地址</view>
+            <input type="text"/>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title">个人微信号</view>
+            <input type="text"/>
+        </view>
+        <view class="borderB H90">
+            <view class="form-title lineH90">个人微信二维码</view>
+            <image src="{{userInfoAvatar}}" class="personImg"></image>
+        </view>
+        <view class="borderB H48">
+            <view class="form-title lineH48">擅长工艺</view>
+            <picker class="picker lineH48" value="{{picker1Value}}" range="{{picker1Range}}" bindchange="normalPickerBindchange">
+                 {{picker1Range[picker1Value]}}
+            </picker>
+            <image src="../../images/trigger-r.png" class="trigger-r"></image>
+        </view>
+        <view class="borderB H48 marginB100">
+            <view class="form-title lineH48">工作时间</view>
+            <picker class="picker lineH48" mode="date" value="{{dateValue}}" start="1999-01-01" end="2999-12-12" bindchange="datePickerBindchange">
+	            {{dateValue}}
+            </picker>
+            <image src="../../images/trigger-r.png" class="trigger-r"></image>
+        </view>
+
+         <view class="btn-area">
+            <button formType="submit">保存</button>
+        </view>
+    </form>
+</view>
