@@ -1,18 +1,18 @@
 <!--pages/mine/mine.wxml-->
 <view class="p20">
     <view class="text-center">
-        <view class="con">
+        <navigator class="con" url="../personInfo/personInfo">
             <image src="{{userInfoAvatar}}" class="self"></image>
             <view class="info-person">
                 <view>{{nickName}}</view>
             </view>
             <view class="code"></view>
-        </view>
+        </navigator>
     </view>
 </view>
 <view class="bg"></view>
 <view class="white">
-    <navigator class="borderB padL-20" url="../personInfo/personInfo">
+    <navigator class="borderB padL-20" url="../account/account">
         <image src="../../images/card.png" class="ico"></image>
         <text class="title">我的账户</text>
         <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>

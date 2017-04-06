@@ -4,11 +4,10 @@
     "pages/mine/mine",
     "pages/personInfo/personInfo",
     "pages/index/index",
-    "pages/find/find",  
+    "pages/find/find", 
+     "pages/account/account",
     "pages/logs/logs"
-    
-
-    
+      
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,14 @@
+<!--pages/account/account.wxml-->
+<view class="text-center padd">
+    <text>积分：</text>{{account}}
+</view>
+<view class="title">账户历史</view>
+<view class="p20">
+    <view class="list" wx:for="{{array}}">
+        <image src="{{item.img}}"></image>
+        <text class="name">{{item.name}}</text>打赏了
+        <text class="reward">{{item.reward}}</text>
+        <view class="time">{{item.time}}</view>
+    </view>
+</view>
+

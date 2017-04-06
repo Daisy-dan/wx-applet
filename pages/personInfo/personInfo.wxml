@@ -1,6 +1,6 @@
 <!--pages/personInfo/personInfo.wxml-->
 <view class="p20">
-    <form>
+    <form bindsubmit="formSubmit" bindreset="formReset">
         <view class="borderB H90">
             <view class="form-title lineH90">头像</view>
             <image src="{{tempFilePaths}}" bindtap="chooseimage" mode="aspecFill" class="personImg"></image>
