@@ -3,9 +3,11 @@
     
     "pages/mine/mine",
     "pages/personInfo/personInfo",
+    "pages/experience/experience",
     "pages/index/index",
     "pages/find/find", 
-     "pages/account/account",
+    "pages/account/account",
+    
     "pages/logs/logs"
       
   ],

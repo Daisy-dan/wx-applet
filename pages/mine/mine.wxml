@@ -17,7 +17,7 @@
         <text class="title">我的账户</text>
         <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
     </navigator>
-    <navigator class="borderB padL-20">
+    <navigator class="borderB padL-20" url="../experience/experience">
         <image src="../../images/shouce.png" class="ico"></image>
         <text class="title">我的体验手册</text>
         <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
