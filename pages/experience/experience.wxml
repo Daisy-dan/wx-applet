@@ -12,3 +12,26 @@
     </view>
     <view class="tips">请手艺人用微信扫码给为你准备消费档案！</view>
 </view>
+<view class="works">
+    <view class="timer">
+        <image src="../../images/pic-ico.png"></image>
+        <text>{{workstimer}}</text>
+    </view>
+    <view class="worksImg">
+        <view wx:for="{{worksimg}}">
+            <image src="{{item}}" mode="scaleToFill"></image>
+        </view> 
+        <text class="comment">你还没有对本作品发表个人观点！</text>   
+    </view>
+    <view class="commentCount">
+        <view>总评论人数：<text>{{reward}}</text></view>
+        <view>总推荐人数：<text>{{reward}}</text></view>
+        <view>总打赏人数：<text>{{reward}}</text></view>
+    </view>
+    <view class="positionA">
+        <image src="../../images/delete.png"></image>
+        <image src="../../images/comment.png"></image>
+        <image src="../../images/share.png"></image>
+    </view>
+    
+</view>
