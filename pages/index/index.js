@@ -6,6 +6,14 @@ Page({
     animationData: {},
     userInfo: {}
   },
+  //分享
+  onShareAppMessage: function () {
+    return {
+      title: '微信小程序联盟',
+      desc: '最具人气的小程序开发联盟!',
+      path: '/page/index/index'
+    }
+  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
