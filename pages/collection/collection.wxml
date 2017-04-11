@@ -1,0 +1,17 @@
+<!--pages/collection/collection.wxml-->
+
+<view class="collection" wx:for="{{collectionItem}}">
+    <view class="itemName">{{item.name}}</view>
+
+    <view class="itemDetail" wx:if="{{item.manual < 1}}">
+        <view class="itemManual" > 
+            暂未收藏
+        </view>
+    </view>
+    
+    <view class="itemDetail" wx:else>     
+        <view class="itemManual">{{item.manual}}份体验手册</view>
+        <view class="itemPeople">共{{item.people}}位达人参与活动</view>
+    </view>
+    
+</view>

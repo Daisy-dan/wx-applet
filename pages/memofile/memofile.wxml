@@ -1,0 +1,20 @@
+<!--pages/memofile/memofile.wxml-->
+<view class="positionR">
+    <view class="worksImg">
+        <view wx:for="{{worksimg}}">
+            <image src="{{item}}" mode="scaleToFill"></image>
+        </view> 
+        <view wx:for="{{worksimg}}">
+            <image src="{{item}}" mode="scaleToFill"></image>
+        </view> 
+        
+    </view>
+    <view class="shade"></view>
+</view>
+<view class="textarea">
+    <textarea  placeholder="此处输入日志的简介" maxlength="140" auto-focus/>
+</view>
+<view class="map">
+<map id="map" longitude="121.3832093357" latitude="31.1681324932" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+
+</view>

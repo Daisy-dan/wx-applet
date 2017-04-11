@@ -110,3 +110,6 @@
     padding: 10px;
     background: #ffffff;
 }
+navigator{
+    display: inline-block;
+}

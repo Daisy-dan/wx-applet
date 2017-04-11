@@ -4,6 +4,8 @@
     "pages/mine/mine",
     "pages/personInfo/personInfo",
     "pages/experience/experience",
+    "pages/collection/collection",
+    "pages/memofile/memofile",
     "pages/index/index",
     "pages/find/find", 
     "pages/account/account",
