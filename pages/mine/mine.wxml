@@ -29,7 +29,7 @@
     </navigator>
 </view>
 <view>test json</view>
-<view wx:for="{{test}}">
-    <view>{{item.shopName}}</view>
-    <view>{{item.shopDescription}}</view>
+<view wx:for="{{array}}" wx:key="shopName">
+    <view>shopName:{{item.shopName}}</view>
+    <view>shopDescription:{{item.shopDescription}}</view>
 </view>

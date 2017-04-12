@@ -6,12 +6,7 @@ Page({
    sex:'',
    province:'',
    city:'',
-   test:[
-     {
-       shopName:'',
-       shopDescription:''
-     }
-   ]
+   array:[]
   }, 
   onLoad: function () {
     var that=this;    
@@ -56,16 +51,16 @@ Page({
       title: '个人中心'
     }),
     wx.request({
-      url: 'https://fb051184.ngrok.io/api/shops', //仅为示例，并非真实的接口地址
+      url: 'https://baz.ngrok.io/api/shops', //仅为示例，并非真实的接口地址
       data:{},
       header: {
           'content-type': 'application/json'
       },
       success: function(res) {
-        console.log(res.data);
+        console.log(res.data.data);
         that.setData({
-          shopName : res.data.shopName,
-          shopDescription : res.data.shopDescription
+          array: res.data.data,
+          
         })
         
         
