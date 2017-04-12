@@ -5,7 +5,13 @@ Page({
    userInfoAvatar:'',
    sex:'',
    province:'',
-   city:''
+   city:'',
+   test:[
+     {
+       shopName:'',
+       shopDescription:''
+     }
+   ]
   }, 
   onLoad: function () {
     var that=this;    
@@ -17,6 +23,7 @@ Page({
           userInfoAvatar:res.userInfo.avatarUrl,
           province:res.userInfo.province,
           city:res.userInfo.city
+          
         })
         switch(res.userInfo.gender){
           case 0: 
@@ -47,6 +54,22 @@ Page({
     }),
     wx.setNavigationBarTitle({
       title: '个人中心'
+    }),
+    wx.request({
+      url: 'https://fb051184.ngrok.io/api/shops', //仅为示例，并非真实的接口地址
+      data:{},
+      header: {
+          'content-type': 'application/json'
+      },
+      success: function(res) {
+        console.log(res.data);
+        that.setData({
+          shopName : res.data.shopName,
+          shopDescription : res.data.shopDescription
+        })
+        
+        
+      }
     })
     
        

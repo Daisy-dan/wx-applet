@@ -28,3 +28,8 @@
         <image src="../../images/trigger-r.png" class="trigger-r text-right"></image>
     </navigator>
 </view>
+<view>test json</view>
+<view wx:for="{{test}}">
+    <view>{{item.shopName}}</view>
+    <view>{{item.shopDescription}}</view>
+</view>
