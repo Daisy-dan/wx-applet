@@ -1,2 +1,3 @@
 <!--pages/find/find.wxml-->
 <text>pages/find/find.wxml</text>
+<button bindtap="scanCode">调起扫描微信</button>

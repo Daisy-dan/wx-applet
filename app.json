@@ -1,13 +1,13 @@
 {
   "pages":[
-    
+    "pages/find/find",
     "pages/mine/mine",
     "pages/personInfo/personInfo",
     "pages/experience/experience",
     "pages/collection/collection",
     "pages/memofile/memofile",
     "pages/index/index",
-    "pages/find/find", 
+     
     "pages/account/account",
     
     "pages/logs/logs"
@@ -18,7 +18,8 @@
     "backgroundColor":"#efefef",
     "navigationBarBackgroundColor": "#000000",
     "navigationBarTitleText": "小程序",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":true
   },
   "tabBar": {
     "list": [{
