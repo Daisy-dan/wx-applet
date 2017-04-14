@@ -29,8 +29,25 @@ Page({
    success: function (res) { 
     // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片 
     _this.setData({ 
-     tempFilePaths:res.tempFilePaths 
+     tempFilePaths:res.tempFilePaths
     }) 
+    wx.uploadFile({
+       url: 'https://String',
+       filePath:'filePath',
+       name:'name',
+       // header: {}, // 设置请求的 header
+       // formData: {}, // HTTP 请求中其他额外的 form data
+       success: function(res){
+         // success
+       },
+       fail: function() {
+         // fail
+       },
+       complete: function() {
+         // complete
+       }
+     })
+
    } 
   }) 
  } ,
