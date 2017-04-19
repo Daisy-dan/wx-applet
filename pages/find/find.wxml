@@ -17,4 +17,14 @@
     <button bindtap="bindButtonTap">获取视频</button>
 </view>
 
+<text>轮播</text>
+<swiper bindchange="imgchange" indicatorDots='{{indicatorDots}}' current='{{current}}' autoplay='{{autoplay}}' interval='{{interval}}'duration='{{duration}}' circular='{{circular}}'>
+    <block wx:for='{{imgUrls}}'>
+    <swiper-item>
+        <image style="" mode="" src="{{item}}" binderror="" bindload="" class='swiper-img'></image>
+    </swiper-item>
+    </block>
+</swiper>
+<button  bindtap="autoplaychange" >{{autoplaytxt}}</button>
+
 
